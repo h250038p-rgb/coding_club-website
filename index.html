@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Code Club</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="showGreeting()">
+<header><h1 class="logo">&lt;/&gt; Code Club</h1><nav><ul>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html" class="NAV1">About Us</a></li>
+<li><a href="events.html" class="NAV2">Events</a></li>
+<li><a href="gallery.html" class="NAV3">Gallery</a></li>
+<li><a href="contact.html" class="NAV4">Join / Contact</a></li>
+</ul></nav></header>
+<main>
+<section class="hero">
+  <h2 id="greeting">Welcome to Code Club</h2>
+  <p>A community of students who learn, build and share software together.</p>
+  <button id="themeBtn" onclick="toggleTheme()">Toggle Theme</button>
+  <a class="btn" href="contact.html">Join Us</a>
+</section>
+<section class="cards">
+  <div class="card"><h3>Learn</h3><p>Weekly workshops on web, mobile and data.</p></div>
+  <div class="card"><h3>Build</h3><p>Team projects and hackathons.</p></div>
+  <div class="card"><h3>Connect</h3><p>Meet mentors and industry guests.</p></div>
+</section>
+</main>
+<footer><p>&copy; 2026 Code Club &middot; Visitors this session: <span id="visits">0</span></p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

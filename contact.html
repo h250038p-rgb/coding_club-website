@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join / Contact | Code Club</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1 class="logo">&lt;/&gt; Code Club</h1><nav><ul>
+<li><a href="index.html" class="NAV0">Home</a></li>
+<li><a href="about.html" class="NAV1">About Us</a></li>
+<li><a href="events.html" class="NAV2">Events</a></li>
+<li><a href="gallery.html" class="NAV3">Gallery</a></li>
+<li><a href="contact.html" class="active">Join / Contact</a></li>
+</ul></nav></header>
+<main>
+<h2>Join or Contact Us</h2>
+<form id="joinForm" action="php/submit.php" method="post" onsubmit="return validateForm()">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name">
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+  <label for="course">Course</label>
+  <input type="text" id="course" name="course">
+  <label for="type">I want to</label>
+  <select id="type" name="type"><option>Join the club</option><option>Contact the club</option></select>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4"></textarea>
+  <p id="error" class="error"></p>
+  <button type="submit">Submit</button>
+</form>
+</main>
+<footer><p>&copy; 2026 Code Club &middot; Visitors this session: <span id="visits">0</span></p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

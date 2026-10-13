@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events | Code Club</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="renderEvents()">
+<header><h1 class="logo">&lt;/&gt; Code Club</h1><nav><ul>
+<li><a href="index.html" class="NAV0">Home</a></li>
+<li><a href="about.html" class="NAV1">About Us</a></li>
+<li><a href="events.html" class="active">Events</a></li>
+<li><a href="gallery.html" class="NAV3">Gallery</a></li>
+<li><a href="contact.html" class="NAV4">Join / Contact</a></li>
+</ul></nav></header>
+<main>
+<h2>Activities &amp; Events</h2>
+<label for="filter">Filter by type: </label>
+<select id="filter" onchange="renderEvents()">
+  <option value="All">All</option><option>Workshop</option><option>Competition</option><option>Social</option>
+</select>
+<div id="eventList" class="cards"></div>
+</main>
+<footer><p>&copy; 2026 Code Club &middot; Visitors this session: <span id="visits">0</span></p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
